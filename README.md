@@ -1,7 +1,7 @@
 # Twitter_screenname_list
 
 
-#目的
+# 目的
  薬剤名のリストが用意してあります。このリストに含まれる薬の名前を含むツイートを検索します。リストに含まれる全ての薬剤について、繰り返し処理します。
 検索結果のツイートをしたユーザーのユーザーID(screen_name)を、リストに取得するのがゴールです。
 
@@ -13,12 +13,12 @@ medicine_list=['アミトリプチリン', 'イミプラミン', 'スルモン�
 
 また、今回はできるだけbotを避けたいと考え、screen_nameに文字列'bot'を含むアカウントは、取得しないことにしました。
 
-#準備
+# 準備
 ・ツイッターAPIを登録する。
 　　参考：https://qiita.com/kngsym2018/items/2524d21455aac111cdee
 　こちらの記事にお世話になりました。
 
-#特定ワードを含むツイートの取得
+# 特定ワードを含むツイートの取得
 ```python:使用コード
 import json
 from requests_oauthlib import OAuth1Session
@@ -61,11 +61,11 @@ screen_name_from_medicine(medicine_list)
 print(users)
 ```
 
-#使用環境
+# 使用環境
 ・jupyter-notebook
 ・macOS Catalina
 
-#参考記事
+# 参考記事
 https://qiita.com/tomozo6/items/d7fac0f942f3c4c66daf
 
 
